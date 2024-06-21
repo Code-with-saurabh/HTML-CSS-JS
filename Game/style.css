@@ -1,0 +1,39 @@
+body{
+      background-color: antiquewhite;
+}
+ .btn{
+ border-radius: 25rem;
+ border :2px solid #000000a9;
+ display:flex;
+ justify-content: space-around;
+ font-family:system-ui;
+ } 
+.btn:hover{
+	opacity:0.5;
+	cursor:pointer; 
+}
+.btn:active{
+	box-sizing: border-box;
+	font-size:28px;
+}
+ 
+.score{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background-color: #5d7a93;
+    height: 109px;
+    width: 252px;
+	border:none;
+	border-radius:4px;}
+	
+.your,.comps{
+	margin-top: 21px;
+	text-align:center;
+	font-size:22px;
+	}
+.main{
+	margin-top:99px;
+	display:flex;
+	justify-content: space-around;
+}

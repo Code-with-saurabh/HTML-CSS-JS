@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .main {
+      padding: 20px; /* Adding some padding for better spacing */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    }
+  </style>
+</head>
+<body>
+  <div class="continer1" style="
+    margin-top: 99px;
+    display: flex;
+    justify-content: space-evenly;">
+
+    <div id="stone" class="btn" style="
+      width: 123px;
+      margin: 2px;
+      background-color: #818681;
+      height: 100px;
+	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"><h1>Stone</h1></div>
+
+    <div id="paper" class="btn" style="
+      width: 123px;
+      margin: 2px;
+      background-color: #cca6db;
+      height: 100px;
+	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"><h1>Paper</h1></div>
+
+    <div id="scissors" class="btn" style="
+      width: 123px;
+      margin: 2px;
+      background-color: #e8e56e;
+      height: 100px;
+	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"
+	  
+    ><h1>Scissors</h1></div>
+  </div>
+  <div class="main">
+    <div class="score">
+      <div class="your" style="margin-left: 40px;"><p class="userScore">0</p><p><u>You</u></p><br></div>
+      <div class="comps"><p class="compScore" >0</p><p><u>Comp</u></p><br></div><br>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
