@@ -1,0 +1,104 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+.continer{
+    display: flex;
+    background-color: #5f9ea0;
+    height: 420px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+	border-radius:1px;
+    box-shadow: inset 14px 14px 40px #00000089, inset -14px -14px 40px #00000089;
+    /* box-shadow:; */
+	}
+.btn{
+	height:120px;
+	width:220px;
+	background-color:#3692827d;
+	border: 1px solid #5f9ea0;
+	border-radius:20px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #00000059;
+	/* inset -20px -17px 20px 0px #78b9bc38; */
+ 
+	}
+
+button{
+	display:flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: stretch;
+	
+	font-family: math;
+	padding-bottom: 29px;
+	font-size:18px;
+	padding: 22px;
+    margin: 22px;
+    width: 123px;
+    height: 40px;
+    border: 2px solid #00000087;
+    border-radius: 12px;
+}
+
+button:hover{
+		opacity:40%;
+		color: black;
+		box-shadow: 20px 20px 60px #00000059,inset -20px -17px 20px 0px #78b9bc38;
+		background-color: #ffffff8a;;/* font-size:20px; */
+		/* font-size:20px; */
+
+}
+button:active{
+	padding-bottom: 20px;
+	margin: 18px;
+		 font-size:20px;
+		 
+}
+
+.display_time{
+	display:flex;
+	justify-content: space-around;
+	height:120px;
+	width:320px;
+	background-color: darkgray;
+	box-shadow: 20px 20px 60px #00000059,inset -20px -17px 20px 0px #78b9bc38;
+	margin-bottom:12px;
+	margin-top:12px;
+	ALIGN-ITEMS: center;
+}
+
+.continer1{
+	background-color:#ebc9c9a8;
+	margin-top:12px;
+	display:flex;
+	justify-content: space-around;
+	box-shadow: 20px 20px 60px #00000059,inset -20px -17px 20px 0px #78b9bc38;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .btn {
+        width: 120px;
+        height: 60px;
+    }
+
+    button {
+        font-size: 14px;
+        width: 90px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .display_time {
+        font-size: 18px;
+    }
+}
