@@ -3,6 +3,8 @@
 	margin:0px;
 }
 
+
+
 .continer{
     display: flex;
     background-color: #5f9ea0;
@@ -79,26 +81,42 @@ button:active{
 	justify-content: space-around;
 	box-shadow: 20px 20px 60px #00000059,inset -20px -17px 20px 0px #78b9bc38;
 }
-
 @media (max-width: 768px) {
-    .container {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .btn {
-        width: 120px;
-        height: 60px;
-    }
+    /* Adjustments for tablets and smaller screens */
 
     button {
-        font-size: 14px;
-        width: 90px;
-        height: 30px;
-        padding: 5px;
+        font-size: 14px; /* Adjust font size for buttons */
+        padding: 10px 20px; /* Adjust padding for buttons */
     }
 
     .display_time {
-        font-size: 18px;
+        font-size: 16px; /* Adjust font size for time display */
+        width: 280px; /* Adjust width for time display */
     }
 }
+
+@media (max-width: 500px) {
+    /* Adjustments for larger smartphones */
+
+.continer {
+    display: flex;
+    background-color: #5f9ea0;
+    height: 420px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    border-radius: 1px;
+    box-shadow: inset 14px 14px 40px #00000089, inset -14px -14px 40px #00000089;
+}
+    button {
+        font-size: 12px; /* Further reduce font size for buttons */
+        padding: 8px 16px; /* Further reduce padding for buttons */
+    }
+
+    .display_time {
+        font-size: 14px; /* Further reduce font size for time display */
+        width: 240px; /* Further adjust width for time display */
+    }
+}
+
+ 
