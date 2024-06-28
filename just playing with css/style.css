@@ -1,0 +1,88 @@
+
+*{
+	background-color:#000000f5;
+}
+ 
+body{
+	border-radius: 20px;
+    border: 2px solid #ccda953b;
+	/* margin:0; */
+	/* height:100vh; */
+	overflow:hidden;
+}
+
+.items{
+	box-shadow: 0 0 10px #4d3c1c8f, 0 0 20px #403e2c, 0 0 30px #00f0ff78;
+}
+.list{
+	/* width:250px; */
+	padding:20px 2px;
+    margin-top:15%;
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+	/* box-shadow:5px 5px 15px #0000000d; */
+	
+	transform-style:preserve-3d;
+	transform:perspective(1000px);
+}
+img{
+	height:120px;
+}
+.list .items{
+	transition:.5s;
+	filter:brightness(0);
+}
+.list .items:hover{
+	transition:.5s;
+	filter:brightness(1);
+	transform:translateZ(200px);
+}
+
+.list .items:hover + *{
+	filter:brightness:(0.7);
+	transform:translateZ(150px) rotateY(40deg);
+}
+
+.list .items:hover + * + *{
+	filter:brightness:(0.4);
+	transform:translateZ(70px) rotateY(20deg);
+}
+.list .items:hover + * + * + *{
+	filter:brightness:(0.2);
+	transform:translateZ(30px) rotateY(10deg);
+}
+.list .items:has(+ *:hover){
+	filter:brightness:(0.6);
+	transform:translateZ(150px) rotateY(-48deg);
+}
+.list .items:has(+ * + * :hover){
+	filter:brightness:(0.4);
+	transform:translateZ(70px) rotateY(-20deg);
+}
+.list .items:has(+ * + * + * :hover){
+	filter:brightness:(0.2);
+	transform:translateZ(30px) rotateY(-10deg);
+}
+
+div h1{
+	    color: antiquewhite;
+		text-align:center;
+}
+
+.cursor-ball{
+	position:fixed;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:yellow;
+	box-shadow: 0 0 10px yellow, 0 0 20px yellow ,0 0 30px yellow;
+	pointer-events:none;
+	transition:transform 0.1s linear;
+}
+.left{
+	margin-left:97%;
+}
+.top{
+	margin: 0;
+}
